@@ -1,7 +1,7 @@
 import { Product, ProductCreate } from "./product.model";
 
 export interface IProductRepository{
-    getProducts: () => Promise <Product[] | null>;
+    getProducts: () => Promise <Product[] | []>;
     getProductById: (id:string) => Promise<Product | null >;
-    createProduct: (newProduct:ProductCreate) => void;
+    createProduct: (newProduct:ProductCreate) => Promise<Product>;
 }
