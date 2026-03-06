@@ -1,7 +1,7 @@
 import express from 'express';
-import { ProductService } from './modules/products/product.service';
-import { ProductController } from './modules/products/product.controller';
-import { PrismaProductRepository } from './modules/products/PrismaProductRepository';
+import { ProductService } from './src/modules/products/product.service';
+import { ProductController } from './src/modules/products/product.controller';
+import { PrismaProductRepository } from './src/modules/products/PrismaProductRepository';
 import { PrismaClient } from '@prisma/client'
 
 
